@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "ADAM",
+    "name": "ADAM",
+    "symbol": "ADAM",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "792281625142643375935439503360000"
+  },
+  "economics": {"poolBps":8800,"initialMarketCapWei":"10000000000000000000","remainderTo":"0x0120a4ccc7516344dbfedc9d43ff7859b7ccca97"},
+  "notes": "ADAM is a fixed-supply ERC-20 with 18 decimals. Its argument-free constructor mints all 1,000,000,000 ADAM to msg.sender. It has no external mint, burn, or administrative controls and no transfer fees. There are no application contracts or initialization calls. Native ETH is currency0 and ADAM is currency1. The provenance initialPrice is sqrt(totalSupply / initialMarketCapWei) * 2^96; the deployer derives the opening price from the economics and total supply."
+}
